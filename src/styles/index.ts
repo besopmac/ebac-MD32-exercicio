@@ -7,6 +7,8 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
     box-sizing: border-box;
     font-family: Inter, sans-serif;
+    background-color: #001011;
+    color: #fff;
   }
 `
 
@@ -15,5 +17,6 @@ export const Container = styled.main`
   height: 100vh;
   display: flex;
   align-items: center;
+  /* flex-direction: column; */
   justify-content: center;
 `

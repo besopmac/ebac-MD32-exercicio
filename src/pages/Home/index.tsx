@@ -1,6 +1,12 @@
+import Sidebar from "../../containers/Sidebar"
+import ContactList from "../../containers/ContactList"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <Sidebar />
+      <ContactList />
+    </>
   )
 }
 
