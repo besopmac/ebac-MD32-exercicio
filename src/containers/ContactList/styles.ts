@@ -7,3 +7,8 @@ export const Container = styled.div`
   flex-direction: column;
   border: 1px solid rgba(255, 255, 255, 0.15);
 `
+
+export const AddButton = styled.a`
+  color: #F8FAFC;
+  background-color: #84CC16;
+`
