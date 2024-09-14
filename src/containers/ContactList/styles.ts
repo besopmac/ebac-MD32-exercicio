@@ -1,14 +1,14 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const Container = styled.div`
-  width: 45vw;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+export const Container = styled.main`
+  height: 100vh;
+  padding: 40px;
+  overflow-y: scroll;
 `
 
-export const AddButton = styled.a`
-  color: #F8FAFC;
-  background-color: #84CC16;
+export const Result = styled.p`
+  display: block;
+  margin: 40px 0;
+  font-size: 18px;
+  font-weight: bold;
 `

@@ -1,19 +1,25 @@
-import { Container, AddButton } from "./styles"
+import { useSelector } from "react-redux"
+import { RootReducer } from "../../store"
+import { Container } from "./styles"
+
+import Contact from "../../components/Contact"
+import { Fragment } from "react/jsx-runtime"
 
 const ContactList = () => {
+  const { items } = useSelector((state: RootReducer) => state.contacts)
+
   return (
     <Container>
-      <div>
-        <h3>John Doe</h3>
-        <p>+1 (555) 555-5555</p>
-        <a href="mailto:T9n9e@example.com">T9n9e@example.com</a>
-
-        <div>
-          <button>Editar</button>
-          <button>Remover</button>
-        </div>
-      </div>
-      <AddButton to="/register">Adicionar Contato</AddButton>
+      {items.map((contact) => (
+        <Fragment key={contact.id}>
+          <Contact
+            id={contact.id}
+            name={contact.name}
+            email={contact.email}
+            phone={contact.phone}
+          />
+        </Fragment>
+      ))}
     </Container>
   )
 }
