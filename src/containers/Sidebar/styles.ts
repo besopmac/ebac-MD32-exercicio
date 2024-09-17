@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import variables from '../../styles/variables'
 
 export const Aside = styled.aside`
   padding: 16px;
@@ -6,19 +7,12 @@ export const Aside = styled.aside`
   height: 100vh;
 `
 
-export const Filtros = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 8px;
-  margin-top: 16px;
-`
-
-export const Input = styled.input`
-  padding: 8px;
-  background-color: #fff;
-  border-radius: 8px;
+export const Button = styled.button`
+  border: none;
+  cursor: pointer;
+  padding: 8px 14px;
   font-weight: bold;
-  border-color: #666;
-  color: #666;
-  width: 100%;
+  border-radius: 6px;
+  color: ${variables.white};
+  background-color: ${variables.black};
 `

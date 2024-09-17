@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux"
 import { RootReducer } from "../../store"
-import { Container } from "./styles"
+import { MainContainer, Title } from "../../styles"
 
 import Contact from "../../components/Contact"
 import { Fragment } from "react/jsx-runtime"
@@ -9,7 +9,8 @@ const ContactList = () => {
   const { items } = useSelector((state: RootReducer) => state.contacts)
 
   return (
-    <Container>
+    <MainContainer>
+      <Title>Lista de contatos</Title>
       {items.map((contact) => (
         <Fragment key={contact.id}>
           <Contact
@@ -20,7 +21,7 @@ const ContactList = () => {
           />
         </Fragment>
       ))}
-    </Container>
+    </MainContainer>
   )
 }
 

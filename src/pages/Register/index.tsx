@@ -1,6 +1,12 @@
+import Form from "../../containers/Form"
+import Sidebar from "../../containers/Sidebar"
+
 const Register = () => {
   return (
-    <div>Register</div>
+    <>
+      <Sidebar showButton />
+      <Form />
+    </>
   )
 }
 
